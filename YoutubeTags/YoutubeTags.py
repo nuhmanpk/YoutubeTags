@@ -4,7 +4,7 @@ import requests
 
 class Tags:
       
-      def __init__(url:str):
+      def __init__(url):
       
          try:
               request = requests.get(url)
@@ -13,5 +13,6 @@ class Tags:
               return tags
       	
          except:
-              print(error)    
+              print("Not a valid YouTube Link")   
+ 
                 
