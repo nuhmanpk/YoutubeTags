@@ -13,6 +13,5 @@ class Tags:
               return tags
       	
          except:
-              print("Not a valid YouTube Link")   
- 
+              return
                 
