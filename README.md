@@ -15,7 +15,6 @@ from YoutubeTags import videotags
 findtags = videotags("https://www.youtube.com/watch?v=RTbrXiIzUt4")
 print(findtags)
 ```
-
 <details>
   <summary><b>Results</b></summary>
 <br/>
@@ -29,7 +28,7 @@ repairing iPhone, iPhone 12, Tesla right to repair, Apple right to repair
 </details>
 
 
-LICENSED under MIT License
+<b>LICENSED under MIT License</b>
 
 ## Github
 
