@@ -7,12 +7,12 @@ README = (file / "README.md").read_text()
 
 setuptools.setup(
     name="YoutubeTags",
-    version="1.0",
+    version="0.5",
     author="Nuhman",
     author_email="nuhmanpk7@gmail.com",
     long_description = README,
     long_description_content_type = "text/markdown",
-    description="Simple Python Library to Extract YouTube Video Tags",
+    description="Simple Python Library to Extract YouTube Video Tags without Youtube API",
     license="MIT",
     url="https://github.com/bughunter0/YoutubeTags",
     classifiers=[
@@ -21,7 +21,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
-    install_requires = [],
+    install_requires = [beautifulsoup,requests,html5lib],
     python_requires=">=3.6",
     
 )
