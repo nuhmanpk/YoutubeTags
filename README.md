@@ -10,7 +10,10 @@ pip install YoutubeTags
 ```
 ## Example
 ```python
-from YoutubeTags import Tags
-videotags = Tags("https://youtu.be/HhHzCfrqsoE")
-print(videotags)
+import YoutubeTags
+findtags = videotags("https://youtu.be/HhHzCfrqsoE")
+print(findtags)
 ```
+
+LICENSED under MIT License
+
