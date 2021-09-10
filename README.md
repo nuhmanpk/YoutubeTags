@@ -1,6 +1,7 @@
 # YoutubeTags
 Python Library to Extract youtube video Tags without Youtube API
 
+[![CodeQL](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml)
  
 ## Installation
 
@@ -16,7 +17,7 @@ findtags = videotags("https://www.youtube.com/watch?v=RTbrXiIzUt4")
 print(findtags)
 ```
 <details>
-  <summary><b>Results</b></summary>
+  <summary><b>Output</b></summary>
 <br/>
 
 ```
