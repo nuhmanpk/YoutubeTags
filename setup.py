@@ -21,7 +21,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
-    install_requires = [beautifulsoup,requests,html5lib],
+    install_requires = [beautifulsoup4,requests,html5lib],
     python_requires=">=3.6",
     
 )
