@@ -1,6 +1,7 @@
-from bs4 import BeautifulSoup
 import html5lib
 import requests 
+import bs4
+from bs4 import BeautifulSoup
 
 def videotags(url):
       
