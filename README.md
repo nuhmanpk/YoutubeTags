@@ -1,5 +1,5 @@
 # YoutubeTags
-Python Library to Extract youtube video Tags without Youtube API
+**YoutubeTags is a python third-party api wrapper to Extract Youtube Video Tags without Youtube API**
 
 [![CodeQL](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml)
 [![Downloads](https://pepy.tech/badge/Youtubetags)](https://pepy.tech/project/YoutubeTags)
@@ -10,22 +10,32 @@ Python Library to Extract youtube video Tags without Youtube API
 ![PyPI - Format](https://img.shields.io/pypi/format/youtubetags)
 
 
-## Installation
+# Installation
 
 ```python
 pip install YoutubeTags
 
 ```
-## Example
+## How to Use It
+
 ```python
 import YoutubeTags
 from YoutubeTags import videotags
-findtags = videotags("https://www.youtube.com/watch?v=RTbrXiIzUt4")
+link = "Add Your Youtube Link Here" # Use https / http Links
+variable_name = videotags(link)
+print(variable_name)
+```
+
+> **_NOTE:_** ONLY SUPPORTS HTTP(S) , use HTTP(S) links to get the results 
+
+## Example 1
+```python
+import YoutubeTags
+from YoutubeTags import videotags
+findtags = videotags("https://www.youtube.com/watch?v=RTbrXiIzUt4") # Mkbhd's Video
 print(findtags)
 ```
-<details>
-  <summary><b>Output</b></summary>
-<br/>
+### Output of Example 1
 
 ```
 Right To Repair, right to repair, MKBHD, right to repair movement, Apple, Apple vs, 
@@ -33,10 +43,35 @@ repairing iPhone, iPhone 12, Tesla right to repair, Apple right to repair
 
 ```
 
-</details>
+## Example 2
+```python
+import YoutubeTags
+from YoutubeTags import videotags
+tags = videotags("https://www.youtube.com/watch?v=Kbe3FKeCd1A") # Karikku star Episode
+print(tags)
+```
+### Output of Example 2
 
+```
+karikku, malayalam, funny, comedy, webseries, lolan,
+george, karikk, karikke, film, trending, sketch, vine, flowerstv
 
-<b>© 2021 Nuhman Pk , LICENSED under MIT License</b>
+```
+## Example 3
+```python
+import YoutubeTags
+from YoutubeTags import videotags
+gettag = videotags("https://www.youtube.com/watch?v=nvjILgpf6tc") # Video From Technical Guruji
+print(gettag)
+```
+### Output of Example 3
+```
+iPhone 14, iPhone 14 Unboxing, iPhone 14 exclusive 1st look, iPhone 14 first look,
+iPhone 14 no notch, iPhone 14 punch hole camera, iPhone 14 titanium sides, iPhone 14 look, iPhone 14 leaks, iPhone 14 design, iPhone 14 india, iPhone 14 launch date, iPhone 14 no camera bump, iPhone 14 features, iPhone 14 price, iPhone 14 vs iPhone 13, iPhone 14 launch event, iPhone 14 india 1st look, iPhone 14 first look in hindi, Technical Guruji, Technicalguruji, Gaurav Chaudhary, 13
+```
+# License
+
+<b>© 2021 Nuhman Pk , LICENSED under [MIT License](https://github.com/bughunter0/YoutubeTags/blob/main/LICENSE)</b>
 
 ## Github
 
