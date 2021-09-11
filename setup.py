@@ -25,7 +25,7 @@ setuptools.setup(
         'bs4',
         'requests',
         'html5lib',
-        'beautifulsoap4'
+    
     ],
     
     python_requires=">=3.6",
