@@ -4,6 +4,11 @@ Python Library to Extract youtube video Tags without Youtube API
 [![CodeQL](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml)
 [![Downloads](https://pepy.tech/badge/Youtubetags)](https://pepy.tech/project/YoutubeTags)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/Youtubetags.svg)](https://pypi.org/project/YoutubeTags)
+![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
+![PyPI](https://img.shields.io/pypi/v/youtubetags)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/youtubetags)
+![PyPI - Format](https://img.shields.io/pypi/format/youtubetags)
+
 
 ## Installation
 
