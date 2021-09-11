@@ -20,8 +20,14 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(),
-    install_requires = [],
+    packages=setuptools.find_packages(include=['YoutubeTags']),
+    install_requires=[
+        'bs4',
+        'requests',
+        'html5lib',
+        'beautifulsoap4'
+    ],
+    
     python_requires=">=3.6",
     
 )
