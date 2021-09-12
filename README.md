@@ -1,8 +1,8 @@
 # YoutubeTags
 **YoutubeTags is a python third-party api wrapper to Extract Youtube Video Tags without Youtube API**
 
+[![Downloads](https://static.pepy.tech/personalized-badge/youtubetags?period=total&units=abbreviation&left_color=grey&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/youtubetags)
 [![CodeQL](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml)
-[![Downloads](https://pepy.tech/badge/Youtubetags)](https://pepy.tech/project/YoutubeTags)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/Youtubetags.svg)](https://pypi.org/project/YoutubeTags)
 ![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
 ![PyPI](https://img.shields.io/pypi/v/youtubetags)
