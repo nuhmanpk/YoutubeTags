@@ -80,4 +80,5 @@ Follow me on [Github](https://www.github.com/bughunter0) and if you find this [l
 
 ## Sponsor this project
 [ko-fi](https://ko-fi.com/nuhmanpk)<br>
-[paypal](https://www.paypal.me/nuhmanpk)
+[paypal](https://www.paypal.me/nuhmanpk)<br>
+[Buy me a Coffee](https://www.buymeacoffee.com/nuhmanpk)
