@@ -7,6 +7,7 @@
 ![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
 ![PyPI](https://img.shields.io/pypi/v/youtubetags)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/youtubetags)
+[![Upload to PIP](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml)
 ![PyPI - Format](https://img.shields.io/pypi/format/youtubetags)
 
 
