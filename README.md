@@ -6,6 +6,7 @@
 [![Supported Versions](https://img.shields.io/pypi/pyversions/Youtubetags.svg)](https://pypi.org/project/YoutubeTags)
 ![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
 ![PyPI](https://img.shields.io/pypi/v/youtubetags)
+[![Documentation Status](https://readthedocs.org/projects/youtubetags/badge/?version=latest)](https://youtubetags.readthedocs.io/en/latest/?badge=latest)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/youtubetags)
 [![Upload to PIP](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml)
 ![PyPI - Format](https://img.shields.io/pypi/format/youtubetags)
