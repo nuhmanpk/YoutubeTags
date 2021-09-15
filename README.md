@@ -7,9 +7,9 @@
 ![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
 ![PyPI](https://img.shields.io/pypi/v/youtubetags)
 [![Documentation Status](https://readthedocs.org/projects/youtubetags/badge/?version=latest)](https://youtubetags.readthedocs.io/en/latest/?badge=latest)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/youtubetags)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/YoutubeTags)
 [![Upload to PIP](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml)
-![PyPI - Format](https://img.shields.io/pypi/format/youtubetags)
+![PyPI - Format](https://img.shields.io/pypi/format/YoutubeTags)
 
 
 # Installation
@@ -70,6 +70,20 @@ print(gettag)
 ```
 iPhone 14, iPhone 14 Unboxing, iPhone 14 exclusive 1st look, iPhone 14 first look,
 iPhone 14 no notch, iPhone 14 punch hole camera, iPhone 14 titanium sides, iPhone 14 look, iPhone 14 leaks, iPhone 14 design, iPhone 14 india, iPhone 14 launch date, iPhone 14 no camera bump, iPhone 14 features, iPhone 14 price, iPhone 14 vs iPhone 13, iPhone 14 launch event, iPhone 14 india 1st look, iPhone 14 first look in hindi, Technical Guruji, Technicalguruji, Gaurav Chaudhary, 13
+```
+## Example 4 (If Video Has no tags)
+```python
+import YoutubeTags
+from YoutubeTags import videotags
+tag = videotags("https://www.youtube.com/watch?v=Mlk888FiI8A") # Google Keynote video 2021 
+if tag=="":
+   print ("No Tags Found")
+else:
+   print(tag)
+```
+### Output of Example 4
+```
+No Tags Found
 ```
 # License
 
