@@ -13,3 +13,15 @@ def videotags(url):
       	
          except:
               return None
+
+def channeltags(url):
+
+         try:
+              request = requests.get(url)
+              soup = BeautifulSoup(request.content, 'html5lib') 
+              tags = ', '.join([ meta.attrs.get("content") for meta in soup.find_all("meta",{"property": "og:video:tag"}) ])
+              return tags
+      	
+         except:
+              return None
+            
