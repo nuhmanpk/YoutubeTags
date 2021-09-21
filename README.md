@@ -1,13 +1,14 @@
 # YoutubeTags
 **YoutubeTags is a python third-party api wrapper to Extract Youtube Tags without Youtube API**, **Capable to extract Video and Channel Tags**
 
-[![Downloads](https://static.pepy.tech/personalized-badge/youtubetags?period=total&units=abbreviation&left_color=grey&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/youtubetags)
+[![Downloads](https://static.pepy.tech/personalized-badge/youtubetags?period=total&units=abbreviation&left_color=grey&right_color=yellow&left_text=Total-Downloads)](https://pepy.tech/project/youtubetags)
 [![CodeQL](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/Youtubetags.svg)](https://pypi.org/project/YoutubeTags)
 ![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
 ![PyPI](https://img.shields.io/pypi/v/youtubetags)
 [![Documentation Status](https://readthedocs.org/projects/youtubetags/badge/?version=latest)](https://youtubetags.readthedocs.io/en/latest/?badge=latest)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/YoutubeTags)
+[![Downloads](https://static.pepy.tech/personalized-badge/youtubetags?period=week&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads/Week)](https://pepy.tech/project/youtubetags)
 [![Upload to PIP](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml)
 ![PyPI - Format](https://img.shields.io/pypi/format/YoutubeTags)
 
