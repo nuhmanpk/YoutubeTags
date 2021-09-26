@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 
 
 def videotags(url):
+    """
+    Use videotage(url) for tags of the video
+    """
     try:
         request = requests.get(url)
         soup = BeautifulSoup(request.content, 'html5lib') 
@@ -15,6 +18,9 @@ def videotags(url):
 
 
 def channeltags(url):
+    """
+    Use channeltags(url) for tags of channel
+    """
     try:
         request = requests.get(url)
         soup = BeautifulSoup(request.content, 'html5lib') 
