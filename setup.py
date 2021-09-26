@@ -1,6 +1,7 @@
 import pathlib
 import setuptools
 
+
 file = pathlib.Path(__file__).parent
 
 README = (file / "README.md").read_text()
@@ -25,9 +26,6 @@ setuptools.setup(
         'bs4',
         'requests',
         'html5lib',
-    
     ],
-    
     python_requires=">=3.6",
-    
 )
