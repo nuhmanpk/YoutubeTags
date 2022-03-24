@@ -2,14 +2,14 @@
 **YoutubeTags is a python third-party api wrapper to Extract Youtube Tags without Youtube API**, **Capable to extract Video and Channel Tags**
 
 [![Downloads](https://static.pepy.tech/personalized-badge/youtubetags?period=total&units=abbreviation&left_color=grey&right_color=yellow&left_text=Total-Downloads)](https://pepy.tech/project/youtubetags)
-[![CodeQL](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/nuhmanpk/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/nuhmanpk/YoutubeTags/actions/workflows/codeql-analysis.yml)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/Youtubetags.svg)](https://pypi.org/project/YoutubeTags)
-![GitHub](https://img.shields.io/github/license/bughunter0/YoutubeTags)
+![GitHub](https://img.shields.io/github/license/nuhmanpk/YoutubeTags)
 ![PyPI](https://img.shields.io/pypi/v/youtubetags)
 [![Documentation Status](https://readthedocs.org/projects/youtubetags/badge/?version=latest)](https://youtubetags.readthedocs.io/en/latest/?badge=latest)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/YoutubeTags)
 [![Downloads](https://static.pepy.tech/personalized-badge/youtubetags?period=week&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads/Week)](https://pepy.tech/project/youtubetags)
-[![Upload to PIP](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml)
+[![Upload to PIP](https://github.com/nuhmanpk/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/nuhmanpk/YoutubeTags/actions/workflows/Pypi-uploads.yml)
 ![PyPI - Format](https://img.shields.io/pypi/format/YoutubeTags)
 
 
@@ -157,11 +157,11 @@ print(tag)
 
 # License
 
-<b>© 2021 Nuhman Pk , LICENSED under [MIT License](https://github.com/bughunter0/YoutubeTags/blob/main/LICENSE)</b>
+<b>© 2021 Nuhman Pk , LICENSED under [MIT License](https://github.com/nuhmanpk/YoutubeTags/blob/main/LICENSE)</b>
 
 ## Github
 
-Follow me on [Github](https://www.github.com/bughunter0) and if you find this [library](https://github.com/bughunter0/YoutubeTags) useful don't forget to add Your star
+Follow me on [Github](https://www.github.com/nuhmanpk) and if you find this [library](https://github.com/nuhmanpk/YoutubeTags) useful don't forget to add Your star
 
 ## Sponsor this project
 [ko-fi](https://ko-fi.com/nuhmanpk)<br>

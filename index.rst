@@ -10,17 +10,17 @@ Status| |PyPI - Downloads| |Upload to PIP| |PyPI - Format|
 
 .. |Downloads| image:: https://static.pepy.tech/personalized-badge/youtubetags?period=total&units=abbreviation&left_color=grey&right_color=yellow&left_text=Downloads
    :target: https://pepy.tech/project/youtubetags
-.. |CodeQL| image:: https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg
-   :target: https://github.com/bughunter0/YoutubeTags/actions/workflows/codeql-analysis.yml
+.. |CodeQL| image:: https://github.com/nuhmanpk/YoutubeTags/actions/workflows/codeql-analysis.yml/badge.svg
+   :target: https://github.com/nuhmanpk/YoutubeTags/actions/workflows/codeql-analysis.yml
 .. |Supported Versions| image:: https://img.shields.io/pypi/pyversions/Youtubetags.svg
    :target: https://pypi.org/project/YoutubeTags
-.. |GitHub| image:: https://img.shields.io/github/license/bughunter0/YoutubeTags
+.. |GitHub| image:: https://img.shields.io/github/license/nuhmanpk/YoutubeTags
 .. |PyPI| image:: https://img.shields.io/pypi/v/youtubetags
 .. |Documentation Status| image:: https://readthedocs.org/projects/youtubetags/badge/?version=latest
    :target: https://youtubetags.readthedocs.io/en/latest/?badge=latest
 .. |PyPI - Downloads| image:: https://img.shields.io/pypi/dm/YoutubeTags
-.. |Upload to PIP| image:: https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch
-   :target: https://github.com/bughunter0/YoutubeTags/actions/workflows/Pypi-uploads.yml
+.. |Upload to PIP| image:: https://github.com/nuhmanpk/YoutubeTags/actions/workflows/Pypi-uploads.yml/badge.svg?branch=main&event=workflow_dispatch
+   :target: https://github.com/nuhmanpk/YoutubeTags/actions/workflows/Pypi-uploads.yml
 .. |PyPI - Format| image:: https://img.shields.io/pypi/format/YoutubeTags
 
 
@@ -232,9 +232,9 @@ Sponsor this project
 
 `ko-fi`_\  `paypal`_\  `Buy me a Coffee`_
 
-.. _MIT License: https://github.com/bughunter0/YoutubeTags/blob/main/LICENSE
-.. _Github: https://www.github.com/bughunter0
-.. _library: https://github.com/bughunter0/YoutubeTags
+.. _MIT License: https://github.com/nuhmanpk/YoutubeTags/blob/main/LICENSE
+.. _Github: https://www.github.com/nuhmanpk
+.. _library: https://github.com/nuhmanpk/YoutubeTags
 .. _ko-fi: https://ko-fi.com/nuhmanpk
 .. _paypal: https://www.paypal.me/nuhmanpk
 .. _Buy me a Coffee: https://www.buymeacoffee.com/nuhmanpk
