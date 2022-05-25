@@ -82,10 +82,10 @@ iPhone 14 first look in hindi, Technical Guruji, Technicalguruji, Gaurav Chaudha
 import YoutubeTags
 from YoutubeTags import videotags
 tag = videotags("https://www.youtube.com/watch?v=Mlk888FiI8A") # Google Keynote video 2021 
-if tag=="":
-   print ("No Tags Found")
+if tag:
+   print (tags)
 else:
-   print(tag)
+   print("No Tags Found")
 ```
 ### Output of Example 4
 ```
