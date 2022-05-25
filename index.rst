@@ -115,10 +115,10 @@ Example 4 (If Video Has no tags)
    import YoutubeTags
    from YoutubeTags import videotags
    tag = videotags("https://www.youtube.com/watch?v=Mlk888FiI8A") # Google Keynote video 2021 
-   if tag=="":
-      print ("No Tags Found")
+   if tag:
+      print (tag)
    else:
-      print(tag)
+      print("No Tag Found ")
 
 Output of Example 4
 ~~~~~~~~~~~~~~~~~~~
