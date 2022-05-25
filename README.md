@@ -167,3 +167,7 @@ Follow me on [Github](https://www.github.com/nuhmanpk) and if you find this [lib
 [ko-fi](https://ko-fi.com/nuhmanpk)<br>
 [paypal](https://www.paypal.me/nuhmanpk)<br>
 [Buy me a Coffee](https://www.buymeacoffee.com/nuhmanpk)
+
+
+## Credits : [thepythoncode](https://www.thepythoncode.com/)
+This Project is based on small Snippet from [thepythoncode.com](https://www.thepythoncode.com/) as part of their Web Scrapping Modules. Do check their web site [here](https://www.thepythoncode.com/). 
