@@ -8,7 +8,7 @@ def videotags(url):
 
     try:
         request = requests.get(url)
-        soup = BeautifulSoup(request.content, 'html5lib')
+        soup = BeautifulSoup(request.content, 'html.parser')
         tags = ', '.join([meta.attrs.get("content") for meta in soup.find_all(
             "meta", {"property": "og:video:tag"})])
         return tags
@@ -21,7 +21,7 @@ def channeltags(url):
 
     try:
         request = requests.get(url)
-        soup = BeautifulSoup(request.content, 'html5lib')
+        soup = BeautifulSoup(request.content, 'html.parser')
         tags = ', '.join([meta.attrs.get("content") for meta in soup.find_all(
             "meta", {"property": "og:video:tag"})])
         return tags
