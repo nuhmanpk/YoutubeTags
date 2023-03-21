@@ -13,6 +13,9 @@
 ![PyPI - Format](https://img.shields.io/pypi/format/YoutubeTags)
 
 
+> **New Updates in Version 1.4**
+> Added Functions for videotitle,videodescription,channeldescription
+
 # Installation
 
 ```python

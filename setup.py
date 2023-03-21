@@ -7,7 +7,7 @@ README = (file / "README.md").read_text()
 
 setuptools.setup(
     name="YoutubeTags",
-    version="1.3",
+    version="1.4",
     author="Nuhman Pk",
     author_email="nuhmanpk7@gmail.com",
     long_description = README,
@@ -22,8 +22,8 @@ setuptools.setup(
     ],
     packages=setuptools.find_packages(include=['YoutubeTags']),  
     install_requires=[
-        'bs4',
-        'requests',
+        'bs4===0.0.1',
+        'requests===2.28.1'
     ],
     
     python_requires=">=3.6",
