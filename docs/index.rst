@@ -216,6 +216,37 @@ Output of Example 4
 
      pewdiepie, pewds, gaming, felix arvid ulf, felix, kjellberg 
 
+What's New in 1.5
+=================
+
+Fully backward compatible. New functions return lists / dicts and raise
+``YoutubeTags.YoutubeTagsError`` subclasses on failure.
+
+.. code:: python
+
+   from YoutubeTags import (get_video_info, get_channel_info, videotags_list,
+                            channeltags_list, hashtags, tag_suggestions,
+                            analyze_tags, bulk_videotags, configure)
+
+   get_video_info("https://youtu.be/RTbrXiIzUt4")   # title, tags, views, likes, ...
+   get_channel_info("@mkbhd")                       # id, name, tags, subscribers, ...
+   videotags_list("RTbrXiIzUt4")                    # tags as a list
+   tag_suggestions("right to repair")               # YouTube autocomplete ideas
+   analyze_tags(videotags("RTbrXiIzUt4"))           # 500-char limit, duplicates
+   bulk_videotags(["RTbrXiIzUt4", "Kbe3FKeCd1A"])   # many videos concurrently
+   configure(timeout=10, retries=3, language="en-US")
+
+All functions accept ``youtu.be``, Shorts, embed and live links, bare video
+ids and ``@handles``. A ``youtubetags`` command line tool is installed too:
+
+::
+
+   youtubetags RTbrXiIzUt4
+   youtubetags --info RTbrXiIzUt4 --json
+   youtubetags --suggest "right to repair"
+
+See the `README <https://github.com/nuhmanpk/YoutubeTags#readme>`_ for full examples.
+
 License
 =======
 

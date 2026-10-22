@@ -13,8 +13,16 @@
 ![PyPI - Format](https://img.shields.io/pypi/format/YoutubeTags)
 
 
-> **New Updates in Version 1.4**
-> Added Functions for videotitle,videodescription,channeldescription
+[![Tests](https://github.com/nuhmanpk/YoutubeTags/actions/workflows/tests.yml/badge.svg)](https://github.com/nuhmanpk/YoutubeTags/actions/workflows/tests.yml)
+
+> **New in Version 1.5** — fully backward compatible, existing code keeps working unchanged.
+> - Full video metadata (`get_video_info`), channel metadata (`get_channel_info`)
+> - Tags as Python lists, hashtags, YouTube autocomplete tag suggestions, tag SEO analysis (500-char limit check)
+> - Bulk/concurrent tag extraction, `youtubetags` command line tool
+> - Accepts `youtu.be`, Shorts, embed, live links, bare video ids and `@handles`
+> - Timeouts, retries and EU cookie-consent handling so requests no longer hang or come back empty
+>
+> **Version 1.4** Added Functions for videotitle,videodescription,channeldescription
 
 # Installation
 
@@ -86,7 +94,7 @@ import YoutubeTags
 from YoutubeTags import videotags
 tag = videotags("https://www.youtube.com/watch?v=Mlk888FiI8A") # Google Keynote video 2021 
 if tag:
-   print (tags)
+   print (tag)
 else:
    print("No Tags Found")
 ```
@@ -157,6 +165,153 @@ print(tag)
 ```
   pewdiepie, pewds, gaming, felix arvid ulf, felix, kjellberg 
 ```
+
+# What's New in 1.5
+
+Everything above still works exactly as before. The functions below are new; they return
+Python lists / dicts and raise `YoutubeTags.YoutubeTagsError` (or a subclass) on failure
+instead of returning `False`.
+
+## Flexible links
+
+Every function now also accepts `youtu.be/...`, `/shorts/...`, `/embed/...`, `/live/...` links,
+bare 11-character video ids, links without `https://`, and channel `@handles`.
+
+```python
+from YoutubeTags import videotags, channeltags
+print(videotags("RTbrXiIzUt4"))
+print(videotags("https://youtu.be/RTbrXiIzUt4"))
+print(channeltags("@mkbhd"))
+```
+
+## Full video info
+
+```python
+from YoutubeTags import get_video_info
+info = get_video_info("https://www.youtube.com/watch?v=RTbrXiIzUt4")
+print(info["title"], info["views"], info["tags"])
+```
+
+```
+{
+ "video_id": "RTbrXiIzUt4",
+ "url": "https://www.youtube.com/watch?v=RTbrXiIzUt4",
+ "title": "What Is Right To Repair?",
+ "description": "Do you really own what you buy? ...",   # full description, not truncated
+ "tags": ["Right To Repair", "right to repair", "MKBHD", ...],
+ "hashtags": [],
+ "channel_name": "Marques Brownlee",
+ "channel_id": "UCBJycsmduvYEL83R_U4JriQ",
+ "channel_url": "http://www.youtube.com/@mkbhd",
+ "views": 4679645,
+ "likes": 250306,
+ "length_seconds": 1215,
+ "category": "Science & Technology",
+ "publish_date": "2021-05-07T18:03:28-07:00",
+ "upload_date": "2021-05-07T18:03:28-07:00",
+ "thumbnail": "https://i.ytimg.com/vi/RTbrXiIzUt4/maxresdefault.jpg",
+ "is_live": false,
+ "is_family_safe": true,
+ "is_unlisted": false,
+ "is_private": false
+}
+```
+
+## Channel info
+
+```python
+from YoutubeTags import get_channel_info
+print(get_channel_info("https://www.youtube.com/@mkbhd"))
+```
+
+```
+{'channel_id': 'UCBJycsmduvYEL83R_U4JriQ', 'name': 'Marques Brownlee',
+ 'url': 'https://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ',
+ 'description': 'MKBHD: Quality Tech Videos | ...', 'tags': ['MKBHD', 'MarquesBrownlee', 'Marques', 'Brownlee'],
+ 'avatar': 'https://yt3.googleusercontent.com/...', 'subscribers': '1.17M subscribers', 'is_family_safe': 'true'}
+```
+
+## Tags as lists, hashtags
+
+```python
+from YoutubeTags import videotags_list, channeltags_list, hashtags
+videotags_list("RTbrXiIzUt4")      # ['Right To Repair', 'right to repair', 'MKBHD', ...]
+channeltags_list("@mkbhd")         # ['MKBHD', 'MarquesBrownlee', 'Marques', 'Brownlee']
+hashtags("https://youtu.be/...")   # ['#shorts', '#tech']
+```
+
+## Tag ideas from YouTube search autocomplete
+
+```python
+from YoutubeTags import tag_suggestions
+tag_suggestions("right to repair")              # ['right to repair', 'right to repair india', ...]
+tag_suggestions("cricket", language="hi", region="IN")
+```
+
+## Tag SEO analysis
+
+Checks your tags against YouTube Studio's 500-character limit and finds duplicates.
+Accepts a list or the string returned by `videotags()`.
+
+```python
+from YoutubeTags import videotags, analyze_tags
+analyze_tags(videotags("RTbrXiIzUt4"))
+```
+
+```
+{'count': 10, 'unique_count': 9, 'total_characters': 164, 'character_limit': 500,
+ 'within_limit': True, 'duplicates': ['right to repair'], 'longest': 'right to repair movement',
+ 'average_length': 13.9}
+```
+
+## Many videos at once
+
+```python
+from YoutubeTags import bulk_videotags
+bulk_videotags(["RTbrXiIzUt4", "Kbe3FKeCd1A"], max_workers=4)
+# {'RTbrXiIzUt4': [...], 'Kbe3FKeCd1A': [...]}   failed links map to None
+```
+
+## Error handling
+
+```python
+from YoutubeTags import get_video_info, VideoUnavailable, InvalidURL, RequestFailed
+try:
+    get_video_info("https://www.youtube.com/watch?v=xxxxxxxxxxx")
+except VideoUnavailable as e:
+    print(e)   # Video xxxxxxxxxxx is unavailable: This video is unavailable
+```
+
+## Settings (timeout, retries, language, proxies)
+
+```python
+import YoutubeTags
+YoutubeTags.configure(timeout=10, retries=3, language="en-US",
+                      proxies={"https": "http://127.0.0.1:8080"})
+```
+
+Defaults: 15 second timeout, 2 retries on network errors / HTTP 429 / 5xx, YouTube picks the language.
+
+## Command line
+
+```
+youtubetags https://www.youtube.com/watch?v=RTbrXiIzUt4       # tags
+youtubetags RTbrXiIzUt4 Kbe3FKeCd1A --json                     # several videos, JSON
+youtubetags --info RTbrXiIzUt4                                 # full metadata
+youtubetags --analyze RTbrXiIzUt4                              # tag SEO analysis
+youtubetags --channel @mkbhd                                   # channel tags
+youtubetags --suggest "right to repair"                        # tag ideas
+python -m YoutubeTags RTbrXiIzUt4                              # same, without the script
+```
+
+## Running the tests
+
+```
+pip install -r requirements.txt
+python -m unittest discover -s tests -v
+```
+
+The tests use saved HTML, so they never hit YouTube.
 
 # License
 
